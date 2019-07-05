@@ -1,0 +1,27 @@
+<br>
+<hr>
+<div class="container">
+    <h2>Adaptive Cards Demo</h2>
+</div>
+<hr>
+<div class="container">
+    <div class="row">
+        <div class="column">
+            <textarea name="textarea" id="text1" cols="57" rows="12.5" #textArea></textarea>
+        </div>
+        <!-- <div class="column" style="align-content: center"> -->
+        <div class="column1">
+            <button class="primary-btn btn-light" style="background-color:tomato; color: white"
+                onclick="document.getElementById('text1').value = ''">CLEAR IT</button><br>
+            <br>
+            <br>
+            <button class="primary-btn btn-light" (click)="onClickConvert(textArea)"
+                style="background-color: greenyellow">CONVERT</button>
+        </div>
+        <!-- </div> -->
+        <div class="column" #adaptiveCards>
+            <p>Insert your Json in the textbox and click button to render card</p>
+        </div>
+        <!-- <div [innerHTML]="cards"></div> -->
+    </div>
+</div>
